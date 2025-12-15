@@ -23,8 +23,6 @@ public class CodeWriter {
         } catch (IOException e) {
             throw new RuntimeException("Error opening output file");
         }
-
-        writeInit(); 
     }
 
     public void writeInit() {

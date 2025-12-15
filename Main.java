@@ -35,6 +35,7 @@ public class Main {
         CodeWriter codeWriter = new CodeWriter(outputPath);
 
         if (source.isDirectory()) {
+            codeWriter.writeInit();
             translateDirectory(source, codeWriter);
         } else {
             translateSingleFile(source, codeWriter);
